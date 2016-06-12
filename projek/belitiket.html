@@ -9,20 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-
-
-
-
-
-
-    <title>RPL</title>
+    <title>Beli Tiket</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
-
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -39,7 +32,23 @@
     <![endif]-->
 
 </head>
+<style>
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid rgba(0,0,0,.0001);
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
 
+</style>
 <body id="page-top" class="index">
 
     <!-- Navigation -->
@@ -47,15 +56,13 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="index.html">e-300</a>
-
+                <a class="navbar-brand page-scroll" href="#page-top">e-300</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -65,27 +72,26 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        
-                            <a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#" >Services</a>
-                            <ul class="dropdown-menu" >
-                                <li><a href="#" style="color : black">Paket</a></li>
-                                <li><a href="#" style="color : black">Penumpang</a></li>
-                            
-                            </ul>
-                        
+                        <a class="page-scroll" href="belitiket.html">Beli Tiket</a>
                     </li>
                     <li>
-                        <a class="page-scroll" data-toggle="modal" data-target="#myModal" href="">Login</a>
-                        
+                        <a class="page-scroll" href="paket.html">Paket</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="Register.html">Register</a>
+                        <a class="page-scroll" href="penumpang1.html">Penumpang</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">About</a>
+                        <a class="page-scroll" href="pesan.html">Kirim Pesan</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="contact us.html">Contact</a>
+					<li>
+					<a type="text" href="#" data-toggle="dropdown" ><span>HARGA</span></a>
+					<ul class="dropdown-menu">
+					<li><a href="hargabarang.html" style="color:black">Paket</a></li>
+					<li><a href="hargatiket.html" style="color:black">Tiket</a></li>
+					</ul>
+					</li>
+					<li>
+                        <a class="page-scroll" href="index.html">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -94,202 +100,120 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Modal -->
-                        <div class="modal fade" id="myModal" role="dialog">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Login</h4>
-                                    </div>
-                                    <div class="modal-body" style="padding: 0px;">
-                                        <div class="container">
-                                            
-                                            <form class="form-horizontal" role="form">
-                                                <div class="form-group">
-                                                    <div class="col-xs-3">
-                                                    <label class="control-label for="usr">Email Address :</label>
-                                                    <input type="text" class="form-control" placeholder="someone@example.com" id="usr">
-                                                </div>
-                                                </div>
-                                                <div class="form-group">
-                                                <div class="col-xs-3">
-                                                    <label class="control-label for="pwd">Password      :</label>
-                                                    <input type="password" class="form-control" placeholder="Password" id="pwd">
-                                                </div>
-                                                </div>
-                                                <div class="form-group"> 
-                                                <div class="col-xs-offset-0 col-xs-5">
-                                                    <div class="checkbox">
-                                                        <label><input type="checkbox"> Remember me</label>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                                <div class="form-group"> 
-                                                <div class="col-sm-offset-0 col-xs-2">
-                                                    <button type="submit" class="btn btn-default">Submit</button>
-                                                </div>
-                                                </div>
-                                                <div class="form-group"> 
-                                                <div class="col-sm-offset-0 col-xs-2">
-                                                    <a href="Register.html">Belum Punya Akun ? Daftar Disini.</a>
-                                                </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-
-    <!-- Header -->
-    <header>
+     <!-- Contact Section -->
+    <section id="contact">
         <div class="container">
-            <div class="intro-text" style="padding-bottom: 0px; padding-top: 50px; ">
-                
-                <div class="intro-heading"></div>
-                
-            
-        </div>
-    </header>
-
-    <!-- Confirm Section -->
-    <section id="registration" style="padding-top: 0px; padding-bottom: 10px;">
-        <div class="row">
-            <div class="col-sm-2" style="background-color:lavender;"></div>
-            <div class="col-sm-8" style="background-color:lavenderblush;">
-                <div class="container">
-    <h1 class="col-lg-9 well">Confirmation Ticket</h1>
-    <div class="col-lg-9 well">
+    <h1 class="well">Registration Form</h1>
+    <div class="col-lg-12 well">
     <div class="row">
                 <form>
-                    <div class="col-sm-10">
-                        
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label>First Name</label>
+                                <input type="text" placeholder="Enter First Name Here.." class="form-control">
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Enter Last Name Here.." class="form-control">
+                            </div>
+                        </div>                  
+                          
+                        <div class="row">
                             <div class="col-sm-4 form-group">
-                                <label>Full Name</label>
-                                <input type="text" value="Tomy Lingga" class="form-control" onfocus="this.blur()">
-                            </div>                     
-                                         
-                            <div class="col-sm-8 form-group">
-                                <label>Tujuan</label>
-                                <input type="text" value="Jl. Achmad Yani No. 29 Kota Langsa, Aceh Timur" class="form-control" onfocus="this.blur()">
+                                <label>Tanggal Keberangkatan</label>
+                                <input type="date" placeholder="" class="form-control">
                             </div>  
-                         
-                                               
-                        <div class="col-sm-6 form-group">
-                            <label>Phone Number</label>
-                            <input type="text" value="+6282344254643" class="form-control" onfocus="this.blur()">
-                        </div>
-                    
-                    
-                        <div class="col-sm-6 form-group">
-                            <label>Email Address</label>
-                            <input type="text" value="tomy.lingga@gmail.com" class="form-control" onfocus="this.blur()">
-                        </div>
+                            <div class="col-sm-4 form-group">
+                                <label for="sel2" >Nomor Bangku</label>
+                                
+                                    <select  class="form-control" id="sel2">
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>06</option>
+                                        <option>07</option>
+                                    </select>
+                            </div>  
+                            <div class="col-sm-4 form-group">
+                                <label for="sel1" >Supir</label>
+                                
+                                    <select  class="form-control" id="sel1">
+                                        <option>Maman</option>
+                                        <option>Firman</option>
+                                        <option>Daus</option>
+                                        <option>Arman</option>
+                                    </select>
+                                
 
-                        
-                        <div class="col-sm-3 form-group">
-                            <label>Jam</label>
-                            <input type="text" value="18.00 WIB" class="form-control" onfocus="this.blur()">
+                            </div>      
                         </div>
-
-                        <div class="col-sm-4 form-group">
-                            <label>Tanggal Keberangkatan</label>
-                            <input type="text" value="09-09-2016" class="form-control" onfocus="this.blur()">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label>From</label>
+                                <input type="text" placeholder="Enter Origin Here.." class="form-control">
+                            </div>      
+                            <div class="col-sm-6 form-group">
+                                <label>To</label>
+                                <input type="text" placeholder="Enter Destination Here.." class="form-control">
+                            </div>  
+                        </div>                      
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="text" placeholder="Enter Phone Number Here.." class="form-control">
+                    </div>      
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="text" placeholder="Enter Email Address Here.." class="form-control">
+                    </div>  
+                    <div class="form-group">
+                    <label class="control-label col-sm-3">Gender</label>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" id="femaleRadio" value="Female">Female
+                                </label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" id="maleRadio" value="Male">Male
+                                </label>
+                            </div>
+                            
                         </div>
-                        <div class="col-sm-3 form-group">
-                            <label>Nomor Bangku</label>
-                            <input type="text" value="02" class="form-control" onfocus="this.blur()">
-                        </div>
-
-                        <div class="col-sm-6 form-group">
-                            <label>Status</label>
-                            <input type="text" value="Belum Lunas" class="form-control" onfocus="this.blur()">
-                        </div>
-
-                        <div class="pull-right">
-                        <div class="col-sm-6 form-group" style="margin-top: 12px">
-                            <button type="button" class="btn btn-lg btn-info">Cetak Tiket</button>
-                        </div>
-                        </div>             
+                    </div>
+                </div>
+                    <button type="button" class="btn btn-lg btn-info">Submit</button>                   
                     </div>
                 </form> 
                 </div>
     </div>
     </div>
+	</section>
 
 
 
-            </div>
-            <div class="col-sm-2" style="background-color:lavender;"></div>
-        </div>
-    </section>
 
-    
-
-    
-    
-    <!-- Clients Aside -->
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>
-    
-    
-
-    <footer>
+<footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2014</span>
+                    <span class="copyright">Copyright &copy; Rekayasa Perangkat Lunak || 2016</span>
                 </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
+                
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+		
+   
 
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
